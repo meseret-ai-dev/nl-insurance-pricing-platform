@@ -1,0 +1,24 @@
+[project]
+name = "nl-insurance-pricing-platform"
+version = "0.1.0"
+description = "Synthetic insurance data pipeline for learning data engineering"
+requires-python = ">=3.10"
+
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.26",
+    "faker>=19.0",
+    "pyarrow>=14.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "ruff>=0.1",
+]
+
+[tool.ruff]
+line-length = 88
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
